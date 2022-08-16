@@ -1,0 +1,55 @@
+#+title: Readme
+
+* Otherweb
+
+** What is otherweb?
+I mean this [[https://otherweb.com][this]]
+
+[[file:images/Otherweb/_20220816_221410screenshot.png]]
+
+** And this package is emacs client
+- Lightweight, fast, built up the Org framework of Emacs, it mean you can you use ~org-match-sparse-tree~ to filter the news base on tags
+[[file:images/Otherweb/_20220816_214340screenshot.png]]
+
+** Custom variable
+
+- Just like the webclient, this package support a wide varities of option to filter which type of new you want to receive
+*** Otherweb--sort
+| recent | relevant | informative |
+*** Otherweb--categories
+The number must be set in range from 0 to 100
+[[file:images/Otherweb/_20220816_233144screenshot.png]]
+
+*** Otherweb--src
+
+[[file:images/Otherweb/_20220816_222549screenshot.png]]
+*** otherweb--use-external-curl-p
+Default set to nil, use raw elisp to fetch api, if you use linux like me and want to a bit faster can set to t.
+*** Example of config
+#+begin_src elisp
+(use-package otherweb
+  :config
+
+  (setq otherweb--use-external-curl-p t ) ;; if using linux
+  (setq otherweb--sort "informative") ;; sort the most informative news instead of default "recenf"
+  (setf (cadr (assoc "politic" otherweb--categories )) 90) ;; default 50, higher point mean less news but more informative, maybe help you avoid fake news
+  (progn
+    (mapcar (lambda (x)
+              (setf (cadr x) nil))
+            otherweb--src)
+    (setf (cadr (assoc "TheHackersNews" otherweb--src)) t)) ;; Turn off  others src, get only from HackersNews
+  )
+#+end_src
+- Or you can use default customize variable system
+** How to install
+*** Load otherweb.el from source code
+*** Install direct from github
+Example from doom emacs
+#+begin_src elisp
+(package! otherweb
+  :recipe (:host github :repo "nhannht/otherweb" ))
+
+(use-package! otherweb
+  ;;;etc)
+#+end_src
+*** TODO Install from melpa
