@@ -1,4 +1,4 @@
-#+title: Readme
+#+title: Otherweb
 
 * Otherweb
 
@@ -11,22 +11,22 @@ I mean this [[https://otherweb.com][this]]
 
 [[file:images/Otherweb/_20220816_221410screenshot.png]]
 ** Motivation:
-- Lightweight, fast (vs the webclient built in react ), built above the Org framework of Emacs, it mean you can you exploit full power of emacs and org on this site data
+- Lightweight, fast (vs the web client built in react), built above the Org framework of Emacs,  you can you exploit full power of Emacs and org on this site data
 
 ** Custom variable
 
-- Just like the webclient, this package support a wide varities of option to filter which type of new you want to receive
-*** Otherweb--sort
+- Just like the web client, this package support a wide varieties of option to filter which type of new you want to receive
+*** otherweb--sort
 | recent | relevant | informative |
-*** Otherweb--categories
+*** otherweb--categories
 The number must be set in range from 0 to 100
 [[file:images/Otherweb/_20220816_233144screenshot.png]]
 
-*** Otherweb--src
+*** otherweb--src
 
 [[file:images/Otherweb/_20220816_222549screenshot.png]]
 *** otherweb--use-external-curl-p
-Default set to nil, use raw elisp to fetch api, if you use linux like me and want to a bit faster can set to t.
+Default set to nil, use raw Elisp to fetch api, if you use Linux like me and want to a bit faster can set to t.
 *** Example of config
 #+begin_src elisp
 (use-package otherweb
