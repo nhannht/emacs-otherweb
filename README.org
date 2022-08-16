@@ -2,9 +2,9 @@
 
 * Otherweb
 
-#+begin_export html
+#+begin_html
 <video src="https://user-images.githubusercontent.com/69144096/184963541-a879f0c3-8741-4035-bd48-1322b58e6b1b.mp4"></video>
-#+end_export
+#+end_html
 
 ** What is otherweb?
 I mean this [[https://otherweb.com][this]]
