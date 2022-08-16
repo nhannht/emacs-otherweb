@@ -2,14 +2,16 @@
 
 * Otherweb
 
+#+begin_export html
+<video src="https://user-images.githubusercontent.com/69144096/184963541-a879f0c3-8741-4035-bd48-1322b58e6b1b.mp4"></video>
+#+end_export
+
 ** What is otherweb?
 I mean this [[https://otherweb.com][this]]
 
 [[file:images/Otherweb/_20220816_221410screenshot.png]]
-
-** And this package is emacs client
-- Lightweight, fast, built up the Org framework of Emacs, it mean you can you use ~org-match-sparse-tree~ to filter the news base on tags
-[[file:images/Otherweb/_20220816_214340screenshot.png]]
+** Motivation:
+- Lightweight, fast (vs the webclient built in react ), built above the Org framework of Emacs, it mean you can you exploit full power of emacs and org on this site data
 
 ** Custom variable
 
