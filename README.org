@@ -15,7 +15,7 @@ I mean this [[https://otherweb.com][this]]
 
 ** Custom variable
 
-- Just like the web client, this package support a wide varieties of option to filter which type of new you want to receive
+- Just like the web client, this package support  wide varieties of option to filter which type of new you want to receive
 *** otherweb--sort
 | recent | relevant | informative |
 *** otherweb--categories
@@ -45,13 +45,12 @@ Default set to nil, use raw Elisp to fetch api, if you use Linux like me and wan
 - Or you can use default customize variable system
 ** How to install
 *** Load otherweb.el from source code
-*** Install direct from github
-Example from doom emacs
+*** Install direct from Github
+Example from doom Emacs
 #+begin_src elisp
 (package! otherweb
-  :recipe (:host github :repo "nhannht/otherweb" ))
+  :recipe (:host github :repo "nhannht/emacs-otherweb" ))
 
-(use-package! otherweb
-  ;;;etc)
+(use-package! otherweb)
 #+end_src
-*** TODO Install from melpa
+*** TODO Install from Melpa
